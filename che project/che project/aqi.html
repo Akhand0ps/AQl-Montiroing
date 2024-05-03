@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AQI Report</title>
+  <link rel="stylesheet" href="aqi.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="aqi.js" defer></script>
+</head>
+<body>
+  <h1 class="site">Air Quality 24/7</h1>
+  <h1 class="page">AQI Dashboard</h1>
+  <div class="container">
+    <div class="aqi-input">
+      <h3>Enter a City Name</h3>
+      <input class="city-input" type="text" placeholder="E.g., New York, London, Tokyo">
+      <button class="search-btn">Search</button>
+      <div class="separator"></div>
+      <button class="location-btn">Use Current Location</button>
+    </div>
+    <div class="aqi-data">
+      <div class="current-aqi">
+        <div class="details">
+          <h2 id="city-name">_______</h2>
+          <h6>AQI: __</h6>
+          <h6>PM2.5: __ µg/m³</h6>
+          <h6>PM10: __ µg/m³</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

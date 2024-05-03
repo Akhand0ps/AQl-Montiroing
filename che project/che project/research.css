@@ -1,0 +1,59 @@
+body {
+  min-height: 100vh; /* Ensures viewport height */
+  background: url("canvas.jpg") no-repeat center center;
+  background-size: cover;
+  /* Removed display: flex and text-align: center */
+}
+
+#introduction,
+#current-monitoring,
+#government-initiatives,
+#expected-benefits,
+#challenges,
+#conclusion {
+  margin-bottom: 20px;
+  padding: 20px; /* Added padding for sections */
+  background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+  border-radius: 5px; /* Add a slight border radius for sections */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

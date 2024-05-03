@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: url("aqi5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  padding-top: 90px;
+}
+
+h2, h3, h6 {
+  color: white;
+}
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  gap: 35px;
+  padding: 30px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  justify-content: center;
+}
+
+.aqi-input, .aqi-data {
+  width: 100%;
+}
+
+.aqi-input input, .aqi-input button {
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1.07rem;
+  color: #fff;
+  background: #6098a8;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.aqi-input input:focus {
+  border: 2px solid #dc9b67;
+}
+
+.aqi-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #BBBBBB;
+}
+
+.aqi-input .separator::before {
+  content: "or";
+  color: #6C757D;
+  font-size: 1.18rem;
+  padding: 0 15px;
+  margin-top: -4px;
+  background: #E3F2FD;
+}
+
+.aqi-input button:hover {
+  background: #20404f;
+}
+
+.aqi-data .current-aqi {
+  color: #fff;
+  background: #4d9fc4;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-aqi h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.current-aqi h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 950px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .aqi-input, .aqi-data {
+    width: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.45rem;
+    padding: 16px 0;
+  }
+}

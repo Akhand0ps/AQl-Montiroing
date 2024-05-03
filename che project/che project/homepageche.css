@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.image1 {
+    border-radius: 25px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:95%;
+    padding: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    display:flex;   
+    justify-items: space-between;
+    align-items:right;
+    z-index: 99;
+}
+.navigation{
+    margin-left: auto; 
+    margin-right: 0;
+}
+.navigation a {
+    position:relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: right;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after {
+    transform-origin: center;
+    transform:scaleX(1);
+}
+.logo {
+    color: white;
+    margin-right: 30px;
+    font-size: 2em;
+}
+body {
+    display:flex;
+    text-align: center;
+    align-items: center;  
+    min-height: 100vh;
+    background: url(aqi3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#content {
+    background: transparent;
+    margin-left: 40px;
+    padding: 30px 30px;
+    margin-top: 90px;
+    width: 90%;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    color:	white;
+}
+#content2 {
+    background: transparent;
+    margin-left: 40px;
+    padding: 30px 30px;
+    margin-top: 90px;
+    width: 90%;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    color:	white;
+}
+#content3{
+    background: transparent;
+    margin-left: 40px;
+    padding: 30px 30px;
+    margin-top: 90px;
+    width: 90%;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    color:	white;
+}
+.image1 {
+    float: right;    
+ margin: 0 15px 0 0;
+}
+.checkweather {
+    margin-top: 20px;
+    width: 150px;
+    height: 70px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+   
+    transition: .5s;
+}
+.checkweather:hover {
+    background: #fff;
+    color: #AEC6CF;
+}

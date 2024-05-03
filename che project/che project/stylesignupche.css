@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display:flex;
+    text-align: center;
+    align-items: center;  
+    min-height: 100vh;
+    background: url(aqi7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 100px; 
+    display:flex;   
+    justify-items: space-between;
+    align-items:right;
+    z-index: 99;
+}
+.navigation{
+    margin-left: auto; 
+    margin-right: 0;
+}
+.navigation a {
+    position:relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: right;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scalex(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after {
+    transform-origin: center;
+    transform:scaleX(1);
+}
+.logo {
+    color: white;
+    margin-right: 30px;
+    font-size: 2em;
+}
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover {
+    background: #fff;
+    color: #AEC6CF;
+}
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 540px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wrap .form-loginbox {
+        width:100%;
+        padding: 40px;
+}
+.form-loginbox h2 {
+    font-size: 2em;
+    color:#779ecb;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+}
+.inputbox label {
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+    top: -5px;
+
+}
+
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color:#8d7464;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.forgot {
+    font-size: .9em;
+    color: white;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot label input {
+    accent-color: #8d7464;
+    margin-right: 3px;
+}
+.forgot a {
+    color: white;
+    text-decoration: none;
+}
+.forgot a:hover{
+    text-decoration: underline;
+}
+.btn {
+    width: 100%;  
+    height: 45px;
+    background: #AEC6CF;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+.register {
+    font-size: .9em;
+    color: #AEC6CF;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.register p a {
+    color: #AEC6CF;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
